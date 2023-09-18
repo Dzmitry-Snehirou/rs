@@ -21,3 +21,14 @@ function disemvowel(str) {
   var arr=[ "A","E","I","O",'U',"a","e","i","o","u"];
   return str.split("").filter(v=>arr.indexOf(v) == -1).join("");
 }
+
+# Education
+- Belarusian National Technical University
+    - Mechanical Engineering
+- IT ACADEMY
+    - WEBSITE DEVELOPMENT WITH HTML,  CSS & JAVASCRIPT
+    - Development of web applications with JavaScript
+    - Web application development using react
+     
+# Languages
+-B1
