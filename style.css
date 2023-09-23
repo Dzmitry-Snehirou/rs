@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@300;600&family=Roboto:wght@300;400;500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #FFF;
+	font: 50px/66px 'Roboto',Arial,Helvetica,sans-serif;
+}
