@@ -77,8 +77,8 @@
 					<div class="profile__line"></div>
 				</div>
 				<div class="main-experience">
-					<h2 class="main-title">experience</h2>
 					<section id="main-experience__project">
+						<h2 class="main-title">experience</h2>
 						<p class="main-experience__subtile">The graduation project is a single page web application (Single Page
 							Application).</p>
 						<p class="main-experience__description">Web application:
@@ -95,17 +95,28 @@
 						</p>
 					</section>
 					<section id="main-experience__skills">
-						<div class="skills">
-							<section class="skills__description">
+						<div class="main-experience__skills">
+							<section class="main-experience__description">
 								<h2 class="main-title">skills</h2>
-								<ul class="skills__list">
-									<li class="skills__item">Programming languages:/Javascript, HTML5/CSS3</li>
-									<li class="skills__item">Codeversion control:Git(basic knowledge)</li>
-									<li class="skills__item">IDE:VS-cod</li>
-									<li class="skills__item">Dataformat:JSONWebIPI: DOM,AJAX,EventEnglish </li>
+								<ul class="main-experience__list">
+									<li class="main-experience__item">Programming languages:/Javascript, HTML5/CSS3</li>
+									<li class="main-experience__item">Codeversion control:Git(basic knowledge)</li>
+									<li class="main-experience__item">IDE:VS-cod</li>
+									<li class="main-experience__item">Dataformat:JSONWebIPI: DOM,AJAX,EventEnglish </li>
 									<li class="skills__item">Proficiency: B</li>
 								</ul>
 							</section>
+						</div>
+					</section>
+					<section id="main-experience__code">
+						<div class="code">
+							<h2 class="main-title">Code Examples</h2>
+							<code>
+								function disemvowel(str) {
+									var arr=[ "A","E","I","O",'U',"a","e","i","o","u"];
+									return str.split("").filter(v=>arr.indexOf(v) == -1).join("");
+								}
+							</code>
 						</div>
 					</section>
 				</div>
