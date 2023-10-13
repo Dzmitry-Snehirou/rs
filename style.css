@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@300;600&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffff;
+	font: 50px/66px 'Roboto', Arial, Helvetica, sans-serif;
+	color: #363636;
+	font-weight: 300;
+	color: #252525;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	transition: .4s;
+}
+
+ul li {
+	list-style: none;
+}
+
+p {
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+button {
+	display: block;
+	border: none;
+	background-color: transparent;
+	font: inherit;
+	/*наследует у родителя*/
+	cursor: pointer;
+	transition: .4s;
+}
+
+.container {
+	max-width: 2480px;
+	margin: 0 auto;
+	padding: 0 75px;
+}
+
+.profile__line {
+	height: 160px;
+	border-bottom: 5px solid #ffcc01;
+}
+
+/*header*/
+
+.yellou__block {
+	position: absolute;
+	height: 290px;
+	width: 75px;
+	background-color: #ffcc01;
+	top: 250px;
+	right: 0;
+}
+
+#header_section {
+	padding: 75px 0 165px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 0.5fr 2fr;
+}
+
+.header-foto__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between
+}
+
+.header-foto {
+	width: 800px;
+	height: 925px;
+}
+
+.header-foto__img {
+	width: 800px;
+	height: 800px;
+}
+
+.header-foto__line {
+	height: 160px;
+	background-color: #ffcc01;
+}
+
+.header-profile {
+	position: relative;
+	padding: 165px 160px 0;
+}
+
+.header-profile__title {
+	font-family: Montserrat;
+	font-size: 100px;
+	line-height: 100px;
+	text-transform: uppercase;
+	padding-bottom: 50px;
+}
+
+.header-profile__category {
+	font-family: Montserrat;
+	font-size: 70.9px;
+	line-height: 58px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	padding-bottom: 170px;
+	text-transform: uppercase;
+}
+
+.header-profile__section,
+.main-title {
+	font-family: Poppins;
+	font-size: 75px;
+	line-height: 58px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding-bottom: 40px;
+}
+
+/*main*/
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding: 0 165px 105px;
+	gap: 180px;
+}
+
+.main-contacts__link {
+	font-size: 40px;
+	font-family: Montserrat;
+	line-height: 58px;
+	font-weight: 500;
+	color: #707070;
+}
+
+.envelop {
+	font-size: 30px;
+}
+
+.fa-solid,
+.fa-brands {
+	padding-right: 60px;
+	color: #ffcc01;
+}
+
+.main-experience {
+	grid-row: 1/4;
+	grid-column: 2;
+}
+
+#main-experience__project,
+#main-experience__skills {
+	padding-bottom: 80px;
+}
+
+.main-experience__subtile {
+	text-transform: uppercase;
+	font-weight: 450;
+	padding-bottom: 50px;
+}
+
+.main-experience__description {
+	font-size: 45px;
+	padding-bottom: 90px;
+}
+
+.main-experience__list,
+.education__list,
+.main-language {
+	line-height: 1.8em;
+}
+
+.main-experience__item:before,
+.education__item:before {
+	content: "—";
+	position: relative;
+	left: -5px;
+}
+
+.main-language__item {
+	padding-left: 20px;
+}
+
+.main-language__item::before {
+	content: url("img/cub.png");
+	width: 15px;
+	height: 15px;
+	position: relative;
+	bottom: 10px;
+	left: -15px;
+}
+
+/*footer*/
+
+.footer {
+	display: flex;
+	align-items: center;
+	min-height: 138px;
+	border-top: 5px solid #ffcc01;
+}
+
+.footer-copyright {
+	width: 100%;
+}
+
+.footer-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
