@@ -43,6 +43,7 @@ img {
 	max-height: 100%;
 }
 
+
 a {
 	color: #FFF;
 	text-decoration: none;
@@ -52,6 +53,42 @@ a {
 ul li {
 	list-style: none;
 }
+
+h2 {
+	color: #0C0C0E;
+	font-family: Forum;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px;
+	/* 100% */
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+
+h3 {
+	color: #000;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+input[type='radio'] {
+	accent-color: #000000;
+}
+
+input:checked+span {
+	font-weight: 700;
+}
+
+label {
+	cursor: pointer;
+	padding: 5px;
+}
+
+/*animation for link*/
 
 @keyframes bounce {
 
@@ -81,9 +118,10 @@ ul li {
 
 body {
 	font: 20px/40px 'Inter', Arial, Helvetica, sans-serif;
-	color: #FFF;
+	color: #000;
 	font-weight: 400;
 }
+
 
 /*header*/
 .header-section {
@@ -111,6 +149,7 @@ body {
 
 .header-menu__link {
 	padding-right: 30px;
+	color: #FFF;
 }
 
 .header-menu__link:hover {
@@ -137,6 +176,7 @@ body {
 	height: 28px;
 }
 
+
 /*main*/
 
 .welcome {
@@ -146,7 +186,6 @@ body {
 	background: no-repeat center url(/img/library-foto.jpg);
 	background-size: cover;
 	z-index: 1;
-	margin-bottom: 20px;
 }
 
 .welcome::after {
@@ -183,4 +222,108 @@ body {
 	line-height: 50px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+}
+
+
+/*main-section*/
+
+.about {
+	padding-top: 20px;
+}
+
+.wrapper-about__title {
+	display: flex;
+	justify-content: center;
+	height: 61px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.wrapper-about__title::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 48%;
+	width: 50px;
+	height: 1px;
+	background-color: #0C0C0E;
+}
+
+.wrapper-about__text {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.wrapper-about__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 25px;
+	margin-bottom: 40px;
+	padding: 0 20px;
+}
+
+.wrapper-about__carusel {
+	width: 78px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.carusel-wrapper {
+	display: flex;
+	width: 26px;
+	height: 26px;
+	line-height: c;
+	align-content: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.carusel-wrapper__item {
+	width: 16px;
+	height: 16px;
+	background-color: #0C0C0E;
+	padding: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.mod {
+	background-color: #BB945F;
+}
+
+/*favorites*/
+
+.wrapper-favorites__text {
+	margin-bottom: 40px;
+	padding: 0 20px;
+}
+
+.wrapper-favorites__seasons {
+	padding-left: 15px;
+	width: 1440px;
+	display: flex;
+	justify-content: left;
+	margin-bottom: 35px;
+}
+
+.seasons-item {
+	padding-left: 20px;
+	padding-right: 90px;
+}
+
+.wrapper-favorites__books {
+	padding: 0 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: relative;
+	column-gap: 260px;
+}
+
+.favorites-books__item {
+	border: 1px solid #000;
+	width: 550px;
+	height: 555px;
 }
